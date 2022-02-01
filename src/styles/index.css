@@ -1,0 +1,20 @@
+:root {
+  --light-color: #156AFF;
+  --dark-color: #191932;
+  --gray-color: #c4c4c4;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Segoe UI;
+  background: var(--dark-color);
+}
+
+@font-face {
+  font-family: 'Segoe UI ';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Segoe UI'), url('../fonts/Segoe UI.woff') format('woff');
+}

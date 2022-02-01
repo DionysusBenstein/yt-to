@@ -1,12 +1,26 @@
+import styled from 'styled-components';
 import React from 'react';
-import classes from '../styles/Header.module.css';
 
+const StyledHeader = styled.header`
+  height: 74px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  font-family: Segoe UI;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+
+  & span {
+    color: var(--light-color);
+  }
+`
 function Header() {
-    return (
-        <header className={classes.header}>
-            <h1 className={classes.logo}>YouTube to <span className={classes.blueText}>WAV</span></h1>
-        </header>
-    );
+  return (
+    <div>
+        <StyledHeader>YouTube to&nbsp;<span>WAV</span></StyledHeader>
+    </div>
+  )
 }
 
 export default Header;
